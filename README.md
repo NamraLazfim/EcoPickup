@@ -10,10 +10,11 @@ Core logic for section 4.1. Matches `UML/WasteManager_ClassDiagram.puml`.
 | --- | --- |
 | `com.ecopickup.model` | User, Resident, Collector, PickupRequest (+ Builder), CollectionRecord, RewardAccount, Address, MaterialType, PickupStatus |
 | `com.ecopickup.reward` | RewardStrategy, PerKilogramReward, FlatRateReward, CampaignBonusReward |
-| `com.ecopickup.service` | PickupService |
-| `com.ecopickup.api` | AddressService, AddressLookupException |
+
 
 Still to add:
+- `com.ecopickup.service`PickupService 
+- `com.ecopickup.api`AddressService, AddressLookupException 
 - `com.ecopickup.api.NominatimAddressService` (section 5.2)
 - `com.ecopickup.gui`: BookingPanel, PickupListPanel, CollectorTaskPanel, PickupController (section 5.1)
 - Unit tests in `src/test/java` (section 4.2)
