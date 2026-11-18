@@ -2,8 +2,6 @@
 
 CSC61204 Software Construction, Group 4, Scenario 3 (SDG 11.6).
 
-Core logic for section 4.1. Matches `UML/WasteManager_ClassDiagram.puml`.
-
 ## Packages
 
 | Package | Classes |
