@@ -235,7 +235,8 @@ public final class PickupRequest {
                 throw new IllegalStateException("Resident, address, material and date are required");
             }
             if (preferredDate.isBefore(LocalDate.now().plusDays(MIN_DAYS_IN_ADVANCE))) {
-                throw new IllegalStateException("Pickup must be booked at least 1 day ahead");
+                throw new IllegalStateException("Pickup must be booked at least " + MIN_DAYS_IN_ADVANCE
+                        + " day(s) in advance");
             }
             if (estimatedWeightKg != null && !isValidWeight(estimatedWeightKg)) {
                 throw new IllegalStateException("Estimated weight must be between 0 and " + MAX_WEIGHT_KG + " kg");
